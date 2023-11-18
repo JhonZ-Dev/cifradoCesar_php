@@ -7,6 +7,8 @@ function cifradoCesar($cadena, $desplazamiento) {
 
      for ($i = 0; $i < $longitud; $i++) {
         $caracter = $cadena[$i];
+        // Verificamos si es una letra
+        if (ctype_alpha($caracter)) {
 
     
 }

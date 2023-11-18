@@ -42,5 +42,7 @@ $desplazamiento = 3;
 
 // Aplicamos el cifrado César a la cadena
 $cadena_cifrada = cifradoCesar($cadena, $desplazamiento);
-
+// Mostramos la cadena original y la cadena cifrada
+echo "Cadena original: " . $cadena . "<br>";
+echo "Cadena cifrada: " . $cadena_cifrada;
 ?>

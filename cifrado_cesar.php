@@ -9,6 +9,10 @@ function cifradoCesar($cadena, $desplazamiento) {
         $caracter = $cadena[$i];
         // Verificamos si es una letra
         if (ctype_alpha($caracter)) {
+            // Obtenemos el código ASCII del carácter
+            $codigo = ord($caracter);
+            // Aplicamos el desplazamiento al código ASCII
+            $codigoDesplazado = $codigo + $desplazamiento;
 
     
 }

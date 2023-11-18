@@ -40,5 +40,7 @@ function cifradoCesar($cadena, $desplazamiento) {
 $cadena = "¡Hola, mundo! 123";
 $desplazamiento = 3;
 
+// Aplicamos el cifrado César a la cadena
+$cadena_cifrada = cifradoCesar($cadena, $desplazamiento);
 
 ?>

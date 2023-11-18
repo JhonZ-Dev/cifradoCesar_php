@@ -25,6 +25,10 @@ function cifradoCesar($cadena, $desplazamiento) {
                 }
                  // Convertimos el código ASCII desplazado de vuelta a carácter y lo concatenamos al resultado
                 $resultado .= chr($codigoDesplazado);
+            } else {
+                // Si no es una letra, simplemente lo agregamos al resultado sin cambios
+                $resultado .= $caracter;
+            }
 
     
 }

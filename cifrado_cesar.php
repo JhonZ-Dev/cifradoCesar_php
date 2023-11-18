@@ -36,7 +36,9 @@ function cifradoCesar($cadena, $desplazamiento) {
 
     
 }
-
+// Cadena original y desplazamiento para el cifrado
+$cadena = "¡Hola, mundo! 123";
+$desplazamiento = 3;
 
 
 ?>

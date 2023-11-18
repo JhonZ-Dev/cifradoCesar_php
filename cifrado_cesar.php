@@ -23,6 +23,8 @@ function cifradoCesar($cadena, $desplazamiento) {
                 $codigoDesplazado = ($codigoDesplazado > ord('z')) ? ($codigoDesplazado - 26) : $codigoDesplazado;
                 $codigoDesplazado = ($codigoDesplazado < ord('a')) ? ($codigoDesplazado + 26) : $codigoDesplazado;
                 }
+                 // Convertimos el código ASCII desplazado de vuelta a carácter y lo concatenamos al resultado
+                $resultado .= chr($codigoDesplazado);
 
     
 }

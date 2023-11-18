@@ -30,6 +30,10 @@ function cifradoCesar($cadena, $desplazamiento) {
                 $resultado .= $caracter;
             }
 
+        }
+
+        return $resultado;
+
     
 }
 

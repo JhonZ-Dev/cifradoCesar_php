@@ -19,6 +19,10 @@ function cifradoCesar($cadena, $desplazamiento) {
                  $codigoDesplazado = ($codigoDesplazado > ord('Z')) ? ($codigoDesplazado - 26) : $codigoDesplazado;
                  $codigoDesplazado = ($codigoDesplazado < ord('A')) ? ($codigoDesplazado + 26) : $codigoDesplazado;
                 } else {
+                    // Si es una letra minúscula, ajustamos el desplazamiento
+                $codigoDesplazado = ($codigoDesplazado > ord('z')) ? ($codigoDesplazado - 26) : $codigoDesplazado;
+                $codigoDesplazado = ($codigoDesplazado < ord('a')) ? ($codigoDesplazado + 26) : $codigoDesplazado;
+                }
 
     
 }

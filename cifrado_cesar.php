@@ -5,6 +5,9 @@ function cifradoCesar($cadena, $desplazamiento) {
      // Iteramos sobre cada carácter de la cadena
      $longitud = strlen($cadena);
 
+     for ($i = 0; $i < $longitud; $i++) {
+        $caracter = $cadena[$i];
+
     
 }
 

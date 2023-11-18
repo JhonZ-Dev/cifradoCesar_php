@@ -13,6 +13,12 @@ function cifradoCesar($cadena, $desplazamiento) {
             $codigo = ord($caracter);
             // Aplicamos el desplazamiento al código ASCII
             $codigoDesplazado = $codigo + $desplazamiento;
+            // Manejamos mayúsculas y minúsculas
+            if (ctype_upper($caracter)) {
+                 // Si es una letra mayúscula, ajustamos el desplazamiento
+                 $codigoDesplazado = ($codigoDesplazado > ord('Z')) ? ($codigoDesplazado - 26) : $codigoDesplazado;
+                 $codigoDesplazado = ($codigoDesplazado < ord('A')) ? ($codigoDesplazado + 26) : $codigoDesplazado;
+                 
 
     
 }
